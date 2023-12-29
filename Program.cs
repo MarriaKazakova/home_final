@@ -11,7 +11,7 @@ class Program
         int count = 0;
         for (int i = 0; i < words.Length; i++)
         {
-            if (words[i].Trim().Length <= 3)
+            if (words[i].Length <= 3)
             {
                 count++;
             }
@@ -21,7 +21,7 @@ class Program
         int index = 0;
         for (int i = 0; i < words.Length; i++)
         {
-            if (words[i].Trim().Length <= 3)
+            if (words[i].Length <= 3)
             {
                 result[index] = words[i].Trim();
                 index++;
